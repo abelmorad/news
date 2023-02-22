@@ -193,10 +193,7 @@ figcaption {
     .nav-links {
         display: none;
     }
-    .hamburger-btn {
-        display: block ;
-    }
-    .hamburger-menu-active {
+    .nav-links-active {
         z-index: 200;
         display: grid;
         position: absolute;
@@ -204,11 +201,18 @@ figcaption {
         height: 100vh;
         top: 0;
         right: 0;
-
+    
         background-color: var(--color-neutral-1);
     
         justify-content: start;
-        padding: 40% 0% 80% 0%;
+        padding: 40% 0% 70% 0%;
+    }
+        .nav-links-active a {
+        font-size: 1.2rem;
+        color: var(--color-neutral-4);
+    }
+    .hamburger-btn {
+        display: block ;
     }
     .hamburger-btn-x {
         display: block;
@@ -216,10 +220,6 @@ figcaption {
         top: 0;
         right: 0;
         padding: 1.5rem 1.5rem;
-    }
-    .hamburger-menu-active a {
-        font-size: 1.2rem;
-        color: var(--color-neutral-4);
     }
     .main-img {
         display: none;
