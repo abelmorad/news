@@ -24,7 +24,8 @@ a {
 }
 main {
     display: grid;
-    margin: 4% 8%;
+    padding-top: 4%;
+    margin: 0% 8%;
 }
 nav {
     display: inline-flex;
@@ -39,8 +40,14 @@ nav {
     justify-content: end;
     list-style: none;
 }
+.nav-links a {
+    color: var(--color-neutral-3);
+}
+.nav-links a:hover {
+    color: var(--color-primary-2);
+}
 .nav-links li {
-    margin: 0rem 1rem;
+    margin-left: 2rem;
 }
 /* landing page*/
 section {
@@ -52,7 +59,7 @@ section {
         " a a b"
         " c c b";
 }
-.hero-img {
+.main-img {
     grid-area: a;
     width: 100%;
     height: auto;
@@ -60,34 +67,34 @@ section {
 .new-article {
     display: grid;
     justify-content: center;
-    align-items: end;
-    width: 360px;
-    padding: 2.5rem 1.5rem;
+    width: 380px;
+    padding: 1rem 1.5rem;
     grid-area: b;
     background-color: var(--color-neutral-4);
 }
 .article-1 {
     border-bottom: 1px solid var(--color-neutral-1);
+    align-self: end;
 }
 .article-2 {
     border-bottom: 1px solid var(--color-neutral-1);
+    align-self: end;
+}
+.article-3 {
+    align-self: end;
 }
 .new-article p {
-    padding-bottom: 2rem;
+    font-size: 1rem;
+    padding-bottom: 2.5rem;
 }
 .new-article h1 {
+    align-self: end;
     font-size: 3rem;
     font-weight: var(---font-weight-3);
     color: var(--color-primary-1);
-    margin-bottom: 1rem;
 }
 .new-article h2,p {
     color: var(--color-neutral-1);
-}
-.new-article h2 {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    margin-bottom: 0.5rem;
 }
 .new-article h2:hover {
     color: var(--color-primary-1);
@@ -125,15 +132,33 @@ section {
     align-items: start;
     gap: 1rem;
 }
+.top-article > div{
+    display: grid;
+    align-items: start;
+    height: 100%;
+}
 .top-article img {
     height: 150px;
     width: auto;
 }
+.top-article h1{
+    font-size: 2rem;
+    color: var(--color-neutral-2);
+}
+.top-article h2 {
+    align-self: center;
+    font-size: 1.2rem;
+}
+.top-article h2:hover {
+    color: var(--color-primary-2);
+}
 figcaption {
+    align-self: end;
     font-family: 'Inter', sans-serif;
     width: fit-content;
 }
-.attribution { 
+.attribution {
+    margin-top: 10vh;
     font-size: 11px; 
     text-align: center; 
 }
