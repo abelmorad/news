@@ -42,7 +42,7 @@ nav {
 .nav-links li {
     margin: 0rem 1rem;
 }
-/* main section */
+/* landing page*/
 section {
     display: grid;
     gap: 2rem;
@@ -118,8 +118,24 @@ section {
     letter-spacing: 2px;
     align-self: flex-end;
 }
+.top-article {
+    display: grid;
+    grid-template-columns: minmax(auto, auto) 220px;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+.top-article img {
+    height: 150px;
+    width: auto;
+}
+figcaption {
+    font-family: 'Inter', sans-serif;
+    width: fit-content;
+}
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
