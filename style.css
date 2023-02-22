@@ -49,7 +49,11 @@ nav {
 .nav-links li {
     margin-left: 2rem;
 }
-/* landing page*/
+.hamburger-btn {
+    display: none;
+}
+
+/*============= LANDING PAGE========== */
 section {
     display: grid;
     gap: 2rem;
@@ -64,6 +68,10 @@ section {
     width: 100%;
     height: auto;
 }
+.mobile-img {
+    display: none;
+}
+/*============= NEW ARTICLE========== */
 .new-article {
     display: grid;
     justify-content: center;
@@ -102,6 +110,8 @@ section {
 .new-article h2:hover {
     color: var(--color-primary-1);
 }
+
+/*============= HEADING ========== */
 .heading {
     color: var(--color-neutral-4);
     
@@ -128,6 +138,8 @@ section {
     letter-spacing: 2px;
     align-self: flex-end;
 }
+
+/*============= TOP ARTICLE========== */
 .top-article {
     display: grid;
     grid-template-columns: minmax(auto, auto) 220px;
@@ -160,6 +172,7 @@ figcaption {
     font-family: 'Inter', sans-serif;
     width: fit-content;
 }
+/*============= FOOTER ========== */
 .attribution {
     margin-top: 10vh;
     font-size: 11px; 
@@ -168,3 +181,57 @@ figcaption {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+    main {
+        padding-top: 6%;
+        margin: 0% 5%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .hamburger-btn {
+        display: block ;
+    }
+    .main-img {
+        display: none;
+    }
+    .mobile-img {
+        display: grid;
+        height: 295px;
+        width: auto;
+    }
+    section {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "a"
+            "c"
+            "c"
+            "b";
+    }
+    .read-more-btn {
+        margin-top: 1.5rem;
+    }
+    .new-article {
+        width: 340px;
+    }
+    .new-article h2 {
+        padding-top: 1.5rem;
+        padding-bottom: 0rem;
+    }
+    .new-article p {
+        padding-bottom: 1.5rem;
+    }
+    .top-article {
+        display: grid;
+        grid-template-columns: minmax(auto, auto) 205px;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+}
+
